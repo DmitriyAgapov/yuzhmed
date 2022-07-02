@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'AGOpusHighResolution';
+    src: url('subset-AGOpusHighResolution-Roman.eot');
+    src: url('subset-AGOpusHighResolution-Roman.eot?#iefix') format('embedded-opentype'),
+        url('subset-AGOpusHighResolution-Roman.woff2') format('woff2'),
+        url('subset-AGOpusHighResolution-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AGOpusHighResolution';
+    src: url('subset-AGOpusHighResolution-Bold.eot');
+    src: url('subset-AGOpusHighResolution-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-AGOpusHighResolution-Bold.woff2') format('woff2'),
+        url('subset-AGOpusHighResolution-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

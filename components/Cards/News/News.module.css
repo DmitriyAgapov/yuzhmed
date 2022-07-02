@@ -1,0 +1,28 @@
+.card {
+	display: flex;
+	flex-flow: column;
+	min-height: 357px;
+	grid-column: span 4;
+	border: 1px solid rgba(68, 115, 142, 0.39);
+	border-radius: 5px;
+}
+
+.card__image {
+	margin-bottom: 1rem;
+}
+
+.card__content {
+	margin: 0 .75rem .75rem;
+}
+
+.card__content_label {
+
+}
+
+.card__title {
+	margin: 0 .75rem .75rem;
+}
+
+.card__date {
+	margin: auto .75rem .75rem;
+}

@@ -1,0 +1,13 @@
+.card {
+	text-align: center;
+	grid-column: span 3;
+}
+.card__image {
+
+}
+.card__content {
+	margin-bottom: 0;
+}
+.card__title {
+	margin: 1rem 0 .5rem;
+}

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import {UserSvg} from './svg/Svg'
-import Button from './ui/Button'
+import {UserSvg} from '../svg/Svg'
+import Button from '../ui/Button'
 const Nav = () => {
 	return (
 		<nav className={'navigation'}>
@@ -31,14 +31,10 @@ const Nav = () => {
 					</Link>
 				</li>
 			</ul>
-			<ul>
-				<li>
-					<Button variant={'button__primary'} text={'Личный кабинет'} icon={<UserSvg />} />
-				</li>
-				<li>
-					<Button variant={'button__primary'} text={'Личный кабинет'} icon={<UserSvg />} />
-				</li>
-			</ul>
+			<div className={'navigation__userbar'}>
+				<Button variant={'button__icon'} text={'Личный кабинет'} icon={<UserSvg />} />
+				<Button variant={'button__primary'} text={'Личный кабинет'} />
+			</div>
 		</nav>
 	)
 }

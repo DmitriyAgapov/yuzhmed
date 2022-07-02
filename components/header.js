@@ -4,11 +4,11 @@ import Search from './Search'
 
 const Header = () => {
 	return (
-	<header>
-		<Logo />
-		<Search />
-		<Contacts />
-	</header>
+		<header className={'header'}>
+			<Logo/>
+			<Search/>
+			<Contacts/>
+		</header>
 	)
 }
 export default Header

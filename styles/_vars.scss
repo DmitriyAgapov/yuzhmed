@@ -6,7 +6,13 @@
   --color-gray-light: #F1F1F1;
 }
 $color-primary: #44738E;
+$color-primary-hover: #315064;
+$color-background-contrast: #E6EEF1;
 $color-border: rgba(68, 115, 142, 0.39);
 $color-text: #000;
 $color-gray: #A6A6A7;
 $color-gray-light: #F1F1F1;
+
+$container: 1160px;
+$grid: repeat(12, 1fr);
+$gap: 2rem;
