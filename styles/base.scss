@@ -23,7 +23,7 @@ body {
 a {
   color: $color-primary;
   text-decoration: none;
-  text-decoration: underline;
+
   &:hover {
     color: $color-primary-hover;
   }
@@ -32,6 +32,9 @@ a {
 h1, h2, h3, h4 {
   font-weight: 700;
   color: black;
+  @media screen and (max-width: 1024px){
+    margin: .5em 0;
+  }
 }
 h1, h2 {
   font-size: 2.25rem;
@@ -42,7 +45,23 @@ h3 {
 h4 {
   font-size: .875rem;
 }
-
+//
+//@media screen and (max-width: 1024px){
+//
+//  h1 {
+//    font-size: 2rem;
+//  }
+//  h2 {
+//    font-size: 1.25rem;
+//  }
+//  h3 {
+//    font-size: 1rem;
+//  }
+//  h4 {
+//    font-size: .875rem;
+//  }
+//
+//}
 figure,
 picture {
   display: inline-block;
@@ -54,10 +73,15 @@ picture {
   }
 }
 
+svg {
+  display: block;
+}
+
 img {
   vertical-align: top;
   max-width: 100%;
   user-select: none;
+  width: 100%;
 }
 
 img[draggable="false"] {
@@ -70,4 +94,28 @@ fieldset {
   margin: 0;
   border: 0;
   padding: 0;
+}
+
+
+//* Scrollbar **/
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 0px solid red;
 }

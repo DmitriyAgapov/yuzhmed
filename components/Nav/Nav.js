@@ -1,39 +1,42 @@
 import Link from "next/link";
 import {UserSvg} from '../svg/Svg'
 import Button from '../ui/Button'
-const Nav = () => {
+
+const Nav = ({state, action}) => {
+	const handleChange = action.bind(this)
+
 	return (
-		<nav className={'navigation'}>
+		<nav className={`navigation ${state ? 'draweropen' : ''}`}>
 			<ul className={'navigation__menu'}>
 				<li>
 					<Link href={'/services'}>
-						<a>Услуги</a>
+						<a onClick={() => handleChange()}>Услуги</a>
 					</Link>
 				</li>
 				<li>
 					<Link href={'/prices'}>
-						<a>Цены</a>
+						<a onClick={() => handleChange()}>Цены</a>
 					</Link>
 				</li>
 				<li>
 					<Link href={'/akcii'}>
-						<a>Акции</a>
+						<a onClick={() => handleChange()}>Акции</a>
 					</Link>
 				</li>
 				<li>
-					<Link href={'/specialisti'}>
-						<a>Специалтсты</a>
+					<Link href={'/specs'} q>
+						<a onClick={() => handleChange()}>Специалисты</a>
 					</Link>
 				</li>
 				<li>
 					<Link href={'/spravochnik'}>
-						<a>Справочник</a>
+						<a onClick={() => handleChange()}>Справочник</a>
 					</Link>
 				</li>
 			</ul>
 			<div className={'navigation__userbar'}>
-				<Button variant={'button__icon'} text={'Личный кабинет'} icon={<UserSvg />} />
-				<Button variant={'button__primary'} text={'Личный кабинет'} />
+				<Button variant={'button-icon'} text={'Личный кабинет'} icon={<UserSvg />} />
+				<Button variant={'button-primary'} text={'Запись на прием'} />
 			</div>
 		</nav>
 	)

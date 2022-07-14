@@ -1,7 +1,10 @@
+import TextField from "@mui/material/TextField";
+
 const Search = () => {
 	return (
 		<div className={'search'}>
-			<input className={'search__input'} placeholder={'Поиск по сайту'} title={'Поиск по сайту'} />
+			<TextField fullWidth className={'search'} label={'Поиск по сайту'}  style={{borderRadius: '20px'}}/>
+
 		</div>
 	)
 }

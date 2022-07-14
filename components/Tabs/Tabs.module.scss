@@ -1,0 +1,39 @@
+.tabs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: 0;
+  @media screen and (max-width: 1024px){
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    *::-webkit-scrollbar {
+      width: 12px;
+    }
+    li:first-child {
+      margin-left: 1.5rem;
+    }
+    li:last-child {
+      margin-right: 1.5rem;
+    }
+  }
+
+
+}
+.tabs__content {
+  margin: 3rem 0;
+  display: grid;
+  gap: 2rem;
+  @media screen and (max-width: 1024px){
+    margin: 2rem 0;
+  }
+}
+.tabs__list_item {
+  //font-size: 2rem;
+  color: #44738E;
+  //@extend .button !optional;
+}
+.tabs__list_active {
+  color: white;
+}

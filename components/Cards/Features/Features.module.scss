@@ -1,9 +1,14 @@
 .card {
 	text-align: center;
 	grid-column: span 3;
+  	@media screen and (max-width: 1024px){
+	  grid-column: span 1;
+  }
 }
-.card__image {
 
+.card__image {
+	display: flex;
+	justify-content: center;
 }
 .card__content {
 	margin-bottom: 0;

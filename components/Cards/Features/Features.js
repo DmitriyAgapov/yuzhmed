@@ -1,4 +1,4 @@
-import styles from  './Features.module.css'
+import styles from  './Features.module.scss'
 
 const Features = ({title, img, content}) => {
 	return (

@@ -1,4 +1,4 @@
-import styles from  './Personal.module.css'
+import styles from  './Personal.module.scss'
 
 const Personal = ({name, img, specialist}) => {
 	return (
@@ -8,7 +8,7 @@ const Personal = ({name, img, specialist}) => {
 			</div>
 			<h3 className={styles.card__title}>{name}</h3>
 			<div className={styles.card__content}>
-				<span className={styles.card__content_label}>Специализация</span>{specialist}
+				<span className={styles.card__content_label}>Специализация: </span>{specialist}
 			</div>
 		</div>
 	)

@@ -3,6 +3,7 @@
 	flex-flow: column;
 	/*min-height: 357px;*/
 	grid-column: span 4;
+	padding: 1rem .5rem;
 	border: 1px solid rgba(68, 115, 142, 0.39);
 	border-radius: 5px;
 	flex: 1;
@@ -25,5 +26,5 @@
 }
 
 .card__date {
-	margin: auto .75rem .75rem;
+	margin: auto .75rem 0;
 }
