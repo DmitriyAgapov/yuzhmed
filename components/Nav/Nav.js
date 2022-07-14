@@ -2,8 +2,8 @@ import Link from "next/link";
 import {UserSvg} from '../svg/Svg'
 import Button from '../ui/Button'
 
-const Nav = ({state, action}) => {
-	const handleChange = action.bind(this)
+const Nav = ({state, action, breakpoint}) => {
+	const handleChange = breakpoint ? action.bind(this) : null
 
 	return (
 		<nav className={`navigation ${state ? 'draweropen' : ''}`}>

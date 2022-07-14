@@ -56,7 +56,7 @@ const Header = () => {
 				{!state ? <Contacts/> : null}
 				{state ? <MobileIcons/> : null}
 			</header>
-			<Nav action={toggleDraw} state={openDrawer}/>
+			<Nav breakpoint={state} action={toggleDraw} state={openDrawer}/>
 		</>
 	)
 }

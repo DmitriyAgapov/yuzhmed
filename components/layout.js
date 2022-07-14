@@ -49,7 +49,12 @@ export default function Layout({ children, pageProps }) {
 		setBreadcrumbs(breadcrumbs);
 	}, [router.asPath]);
 
-	const meta = pageProps.data.meta
+	const meta = pageProps.data?.meta || {
+		meta:
+			{
+				title: 'None',
+				keywords: 'test, tamplate'
+			}}
 
 	return (
 		<>
