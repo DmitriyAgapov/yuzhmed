@@ -6,14 +6,14 @@ header, section, footer, nav {
     grid-template-columns: calc((100vw - $container-tablet - $gap) / 2) $grid calc((100vw - $container-tablet - $gap) / 2);
   }
   @media screen and (max-width: 767px){
-    grid-template-columns: 1rem $grid 1rem;
+    grid-template-columns: 0.125rem $grid .125rem;
   }
   gap: $gap;
   @media screen and (max-width: 1024px){
     gap: $gap-mobile;
   }
 
-  grid-template-rows: auto 1fr m;
+  //grid-template-rows: auto 1fr m;
   grid-auto-flow: row;
   &:before {
     content: '';

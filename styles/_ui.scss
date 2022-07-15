@@ -104,18 +104,17 @@ option {
   display: block;
   padding: 13px 22px 31px;
 }
-
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
+//
+//* {
+//  scrollbar-width: thin;
+//  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+//}
+//
+///* Works on Chrome, Edge, and Safari */
+//*::-webkit-scrollbar {
+//  width: 12px;
+//  height: 12px;
+//}
 
 *::-webkit-scrollbar-track {
   background: transparent;

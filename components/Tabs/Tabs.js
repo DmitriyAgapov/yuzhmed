@@ -28,7 +28,7 @@ class Tabs extends Component {
 		} = this;
 
 		return (
-			<div className="tabs">
+			<div className={styles.tabs}>
 				<ul className={styles.tabs__list}>
 					{children.map((child) => {
 						const { label } = child.props;

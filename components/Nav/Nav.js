@@ -1,9 +1,11 @@
 import Link from "next/link";
 import {UserSvg} from '../svg/Svg'
 import Button from '../ui/Button'
+import Modal from "../Modal/Modal";
+
 
 const Nav = ({state, action, breakpoint}) => {
-	const handleChange = breakpoint ? action.bind(this) : null
+	const handleChange = breakpoint ? action.bind(this) : (() => void(null))
 
 	return (
 		<nav className={`navigation ${state ? 'draweropen' : ''}`}>
@@ -36,7 +38,8 @@ const Nav = ({state, action, breakpoint}) => {
 			</ul>
 			<div className={'navigation__userbar'}>
 				<Button variant={'button-icon'} text={'Личный кабинет'} icon={<UserSvg />} />
-				<Button variant={'button-primary'} text={'Запись на прием'} />
+				<Modal />
+
 			</div>
 		</nav>
 	)

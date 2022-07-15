@@ -1,0 +1,29 @@
+.modal {
+  background-color: white;
+  position: absolute;
+  top: calc(50% - 270px);
+  right: calc(50% - 9rem);
+  bottom: calc(50% - 270px);
+  left: calc(50% - 9rem);
+  padding: 2rem 1.5rem;
+  min-width: 16rem;
+  max-width: 18rem;
+  z-index: 1199;
+  max-height: 540px;
+  @media screen and (min-width: 1025px){
+    padding: 2rem 4rem;
+    max-width: 28rem;
+    right: calc(50% - 14rem);
+    bottom: 10%;
+    left: calc(50% - 14rem);
+  }
+}
+.backdrop {
+  position: fixed;
+  background: rgba(68, 115, 142, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1198;
+}
