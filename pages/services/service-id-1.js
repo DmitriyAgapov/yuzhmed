@@ -6,6 +6,7 @@ import News from "../../components/Cards/News/News";
 import Reviews from "../../components/Cards/Reviews/Reviews";
 import FormPriemOrder from "../../components/Form/FormPriemOrder";
 import Personal from "../../components/Cards/Personal/Personal";
+import Price from "../../components/Price/Price";
 const specsItems = [<Personal
 	name={'Фамилия Имя Очество'}
 	key={0}
@@ -86,13 +87,7 @@ export default function ServiceList(props) {
 			<Section
 				// type={'section-slide'}
 				title={'Цены'}
-				content={<ul>
-					<li>Здесь какие то навыки</li>
-					<li>Здесь какие то навыки</li>
-					<li>Здесь какие то навыки</li>
-					<li>Здесь какие то навыки</li>
-					<li>Здесь какие то навыки</li>
-				</ul>}/>
+				content={<Price/>}/>
 			<Section
 				title={'Наши специалисты'}
 				type={'section-links-1 section-personal'}

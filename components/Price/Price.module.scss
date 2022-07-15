@@ -1,0 +1,36 @@
+@import "styles/vars";
+
+.price {
+	display: grid;
+  	grid-template-columns: 1fr 6rem;
+  	gap: .75rem;
+}
+.price__header_title {
+
+}
+.price__header {
+	grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 6rem ;
+  gap: .75rem;
+}
+
+.price__header_value, .price__header_title {
+	padding: .875rem .75rem .625rem;
+  background-color: $color-background-contrast;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.price__item {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 6rem;
+  gap: .75rem;
+}
+.price__item_title,
+.price__item_value {
+	@extend .price__header_value;
+  background-color: transparent;
+  border: 1px solid  $color-background-contrast;
+  font-weight: 400;
+}

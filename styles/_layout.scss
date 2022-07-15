@@ -366,7 +366,11 @@ header, section, footer, nav {
       gap: 1rem;
       > .button {
         margin-left: 0;
+
         align-self: center;
+        width: 100%;
+        justify-content: center;
+        max-width: 16rem;
       }
     }
   }
